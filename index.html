@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manejando el DOM</title>
+</head>
+<body>
+  <h1>Práctica de Tabla de Precios Interactiva</h1>
+
+  <div id="product-container">
+    <div class="product-card prdct-1">
+      <img src="http://via.placeholder.com/200x100" alt="">
+      <h3>Patalón</h3>
+      <p>Precio <span id="price-1">18.00</span></p>
+      <button class="btn-add btn-prdct-1">Agregar</button>
+    </div>
+  
+    <div class="product-card prdct-2">
+      <img src="http://via.placeholder.com/200x100" alt="">
+      <h3>Sueter</h3>
+      <p>Precio <span id="price-2">12.00</span></p>
+      <button class="btn-add btn-prdct-2">Agregar</button>
+    </div>
+  
+    <div class="product-card prdct-3">
+      <img src="http://via.placeholder.com/200x100" alt="">
+      <h3>Abrigo</h3>
+      <p>Precio <span id="price-3">25.00</span></p>
+      <button class="btn-add btn-prdct-3">Agregar</button>
+    </div>
+
+    <div class="product-card prdct-4">
+      <img src="http://via.placeholder.com/200x100" alt="">
+      <h3>Short</h3>
+      <p>Precio <span id="price-4">9.00</span></p>
+      <button class="btn-add btn-prdct-4">Agregar</button>
+    </div>
+
+    <div class="product-card prdct-5">
+      <img src="http://via.placeholder.com/200x100" alt="">
+      <h3>Gorra</h3>
+      <p>Precio <span id="price-5">6.00</span></p>
+      <button class="btn-add btn-prdct-5">Agregar</button>
+    </div>
+
+    <div class="product-card prdct-6">
+      <img src="http://via.placeholder.com/200x100" alt="">
+      <h3>Zapatillas</h3>
+      <p>Precio <span id="price-6">32.00</span></p>
+      <button class="btn-add btn-prdct-6">Agregar</button>
+    </div>
+  </div>
+
+  <table id='price-table'>
+    <thead>
+      <th class='product-col'>Product</th>
+      <th class='quantity-col'>Quantity</th>
+      <th class='subtotal-col'>Subtotal</th>
+    </thead>
+    <tbody></tbody>
+    <tfoot id='pie-tabla'>
+      <td></td>
+      <td><button id="remove">Vaciar Carrito</button></td>
+      <td id="total-amount" class="subtotal-col"><p><span></span> &#36;</p></td>
+    </tfoot>
+  </table>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
